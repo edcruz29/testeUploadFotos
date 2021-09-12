@@ -1,0 +1,44 @@
+<%- include('./partials/header')%>
+<main class="main">
+  <div class="perfil__wrapper">
+    <div class="foto__perfil"></div>
+    <div class="descricao__wrapper">
+      <h4 class="perfi__nome">Dollynho</h4>
+      <span class="perfil__localizacao">São Paulo</span>
+    </div>
+  </div>
+  <section class="principal">
+    <a href="/posts"><i class="fa fa-plus-circle new" aria-hidden="true"></i></a>
+    <div class="post__and__sugestoes">
+      <div class="postagens">
+        <div class="post__wrapper">
+          <% posts.forEach(post=>{ %>
+          <div class="post__foto">
+            <img class="post__foto" src="<%=post.photo%>" alt="">
+          </div>
+          <ul class="post__lista_icons">
+              <li><i class="fa fa-paw menu__icon" aria-hidden="true"></i></li>
+              <li><i class="fa fa-comment menu__icon" aria-hidden="true"></i></li>
+              <li><i class="fa fa-paper-plane-o menu__icon" aria-hidden="true"></i></li>
+          </ul>
+          <div class="post__legenda">
+              <p><%=post.post%></p>
+          </div>
+          <% }) %>
+      </div>
+      </div>
+      <div class="sugestoes">
+        <h3 class="sugestoes__titulo">Segestão de Amigos</h3>
+        <%- include('./partials/sugestoes')%>
+        <%- include('./partials/sugestoes')%>
+        <%- include('./partials/sugestoes')%>
+        <%- include('./partials/sugestoes')%>
+        <%- include('./partials/sugestoes')%>
+      </div>
+    </div>   
+  </section>
+</main>
+</div>
+<script src="/js/darkMode.js"></script>
+</body>
+</html>

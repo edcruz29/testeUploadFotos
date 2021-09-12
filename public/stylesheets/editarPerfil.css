@@ -1,0 +1,122 @@
+
+.container{
+    height: 100%;
+    background-color:var(--bgSite);
+    width: 100%;
+}
+.container__total{
+    background-color:var(--bgSite);
+    width: 100%;
+}
+
+.section__info{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info__foto__perfil{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.info__wrapper{
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+}
+.box__nome__aniversario, .box__especie__raca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.info__loc{
+
+    margin-bottom: 20px;
+}
+.info__localizacao{
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+    color: var(--localizacao);
+}
+.info__localizacao__span{
+color: var(--text);
+padding: 0 2px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+.label__form{
+    margin-bottom: 5px;
+    color:var(--text);
+    font-size: 18px;
+    font-weight: bold;
+}
+.form__text, .form__email, .form__tel, .form__textarea{
+    margin-bottom: 10px;
+    background-color: var(--input-forms);
+    color:var(--text);
+    font-size: 16px;
+    border-radius: 10px;
+    border: var(--borda);
+    outline: none; 
+}
+.form__textarea{
+    resize: none;
+    
+}
+.form__btn{
+    margin: auto;
+    width: 100px;
+    border-radius: 20px;
+    background-color: var(--buttonColor);
+    border: var(--borda);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 18px;
+}
+@media(min-width:1080px){
+    .container__total{
+        padding: 0 20px;
+        max-width: 800px;
+        margin: auto;
+       
+    }
+    .form__text, .form__email, .form__tel, .form__textarea{
+       
+        font-size: 25px;
+      
+    }
+    .form__btn{
+        width: 200px;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+}
+@media(min-width:1500px){
+    .container__total{
+        padding: 0 20px;
+        max-width: 1200px;
+        margin: auto;
+       
+    }
+    .form__btn{
+        width: 200px;
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+}
